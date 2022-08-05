@@ -1,0 +1,290 @@
+<html>
+
+<head>
+
+  <!--start of navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+    <h1><a id="home11" class="navbar-brand is-size-1 text-danger" href="#">World Travel Agency</a></h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Nav bar Start-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <!-- First NavBar Item-->
+          <a class="nav-link text-success" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <!-- Second Navbar item-->
+          <a class="nav-link text-success" data-bs-toggle="modal" data-bs-target="#travelQuiz">Travel Quiz</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Explore
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Middle East</a></li>
+            <li><a class="dropdown-item" href="#">Western Europe</a></li>
+            <li><a class="dropdown-item" href="#">Asia</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Pick for me!</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <!-- Last Item in Navbar that is disabled-->
+          <a class="nav-link text-success" data-bs-toggle="modal" data-bs-target="#login">Login</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <!-- Search bar-->
+        <button class="btn"><input class="form-control mr-sm-2" type="search" placeholder="Search"
+            aria-label="Search"></button>
+        <!-- Search button-->
+        <button class="btn btn-outline-success my-sm-0 justify-content-right" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Importing Bulma Bootstrap and custom css-->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="customStyles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+  <head>
+
+  <body>
+
+    <!-- Travel Quiz Hero-->
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://youmatter.world/app/uploads/sites/2/2019/11/travel-world.jpg" alt="travelPic">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Take our Travel Quiz</h1>
+          <p class="lead">
+            Take our State of the Art Travel Quiz to figure out where you really want to go! Use your results to book a
+            ticket to
+            your next travel destination with our Agency and World class travel experience!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#travelQuiz">
+              Travel Quiz
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Search for Flights</h1>
+          <p class="col-lg-10 fs-4">Search up flights using their flight IATA Code
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <form class="p-4 p-md-5 border rounded-3 bg-light">
+            <div class="form-floating mb-3">
+              <input type="input search" data-search class="form-control" id="floatingInput" placeholder="MU2557">
+              <label for="floatingInput">IATA Code</label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Search</button>
+            <hr class="my-4">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal For Travel Quiz -->
+    <div class="modal fade bd-example-modal-lg" id="travelQuiz" tabindex="-1" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="myLargeModalLabel">Travel Quiz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Header Code -->
+            <section class="hero has-background-grey-darker notification has-text-danger-light has-text-centered">
+              <div class="hero-body">
+                <p class="title">Travel Quiz</p>
+                <p class="subtitle">
+                  Answer each question to find out where you should travel next!
+                </p>
+              </div>
+            </section>
+
+            <div class="container has-text-centered">
+              <div id="quiz">
+                <!-- Quiz questions will be added here -->
+              </div>
+              <!-- Final Answer 1 (-, -) -->
+              <section id="logical-introvert" class="section hidden">
+                <div class="container">
+                  <h1 class="title">You should go to Israel!</h1>
+                  <h2 class="subtitle">You are adventurous and love going to new places!</h2>
+                  <div class="columns">
+                    <div class="column has-text-centered">
+                      <figure class="image card notification has-background-light is-inline-block">
+                        <div class="container">
+                          <img src="https://events.jhu.edu/sites/default/files/2021-06/SHS_369474167_Caesarea.jpg"
+                            alt="Philospher" />
+                        </div>
+                      </figure>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#middleeastModal">
+                        Explore Israel and the Middle East!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Final Answer 2 (-, +) -->
+              <section id="logical-extrovert" class="section hidden">
+                <div class="container">
+                  <h1 class="title">You should go to Mongolia!</h1>
+                  <h2 class="subtitle">You are adventurous and love going to new places!</h2>
+                  <div class="columns">
+                    <div class="column has-text-centered">
+                      <figure class="image card notification has-background-light is-inline-block">
+                        <div class="container">
+                          <img src="https://www.toursmongolia.com/uploads/best_time_to_travel_mongolia.jpg"
+                            alt="Group Leader" />
+                        </div>
+                      </figure>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#asiaModal">
+                        Explore Mongolia and Asia!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Final Answer 3 (+, -) -->
+              <section id="creative-introvert" class="section hidden">
+                <div class="container">
+                  <h1 class="title">You should go to Luxembourg!</h1>
+                  <h2 class="subtitle">You are adventurous and love going to new places!</h2>
+                  <div class="columns">
+                    <div class="column has-text-centered">
+                      <figure class="image card notification has-background-light is-inline-block">
+                        <div class="container">
+                          <img
+                            src="https://www.expatica.com/app/uploads/sites/7/2015/09/facts-about-luxembourg-1920x1080.jpg"
+                            alt="Day Dreamer" />
+                        </div>
+                      </figure>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#europeModal">
+                        Explore Western Europe and Luxembourg
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Final Answer 4 (+, +) -->
+              <section id="creative-extrovert" class="section hidden">
+                <div class="container">
+                  <h1 class="title">You should go to Vietnam!</h1>
+                  <h2 class="subtitle">You are adventurous and love going to new places!</h2>
+                  <div class="columns">
+                    <div class="column has-text-centered">
+                      <figure class="image card notification has-background-light is-inline-block">
+                        <div class="container">
+                          <img
+                            src="https://static.toiimg.com/thumb/msid-91025208,width-748,height-499,resizemode=4,imgsize-143956/Explore-the-culturally-rich-and-stunning-Vietnam.jpg"
+                            alt="Performing Artist" />
+                          <button type="button" class="btn btn-info"></button>
+                        </div>
+                      </figure>
+                      <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#asiaModal">
+                        Explore Vietnam and Asia!
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary disabled" id="button1">Take Again?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal for login-->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login to your account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Save Password</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asia Modal-->
+    <div class="modal fade" id="asiaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Explore Asia</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ASAISIAS
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Importing Bootstrap Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+      </script>
+    <!-- Importing Material Design Bootstrap Script-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js">
+    </script>
+    <script src="script.js"></script> <!-- Importing main script-->
+  </body>
+
+
+</html>
